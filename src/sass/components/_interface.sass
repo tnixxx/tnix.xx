@@ -7,14 +7,25 @@ body
     background-color: $black
     color: $white
     font-family: 'Montserrat', sans-serif
-
 a
-    text-decoration-color: $red
-    color: inherit
-    &.btn
-        padding: 6px 17px
-        border-radius: 10px
-        &-white
-            background-color: $white
-            color: $black
+    display: inline-block
+    color: $white !important
+    text-decoration: none !important
+    font-weight: 600
+    font-size: 18px
 
+.btn
+    padding: 6px 17px
+    border-radius: 10px 
+    font-size: 18px 
+    color: $black !important
+    font-weight: 600
+    &-white
+        background-color: $white
+        &:hover
+            background: $red
+            color: $white !important
+
+h3
+    font-weight: 700
+    font-size: 77px
