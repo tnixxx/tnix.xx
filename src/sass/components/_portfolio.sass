@@ -1,0 +1,26 @@
+.portfolio
+    &-title
+        margin-bottom: 30px
+    &-block
+        padding: 35px 0 120px
+    &-item
+        margin-bottom: 30px
+        & img
+            width: 100%
+        &__sm
+            margin-top: 15px    
+    &-link
+        text-decoration: underline
+        &:hover
+            text-decoration-color: $red               
+@media (min-width: 768px)
+    .portfolio
+        &-item
+            &__sm
+                margin-top: 5px     
+
+@media (min-width: 992px)
+    .portfolio
+        &-item
+            &__sm
+                margin-top: 13px     

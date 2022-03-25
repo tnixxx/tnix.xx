@@ -1,0 +1,29 @@
+.modal
+    &-xlg
+        max-width: 1000px
+    &-body
+        padding: 30px    
+        background: $gray
+    &-title
+        font-weight: 600
+        font-size: 61px
+.form
+    &-block
+        max-width: 370px
+        margin-left: auto
+        margin-right: auto
+    &-text
+        &-input    
+            border: 0
+            border-bottom: 2px solid $white
+            padding: 3px 7px
+            outline: none !important
+            background-color: transparent
+            color: $white
+            font-size: 20px
+            &:not(:first-child)
+                margin-top: 20px
+@media   ( max-width: 576px )
+    .modal
+        &-title
+            font-size: 40px           
