@@ -1,13 +1,20 @@
-function changeItem(n) {
-    objev = document.getElementsByClassName(n)
-    Array.from(objev).forEach(function(item) {
-        item.setAttribute('fill', '#c33636');
-     });
+function slowScroll(id) {
+    var offset = 0;
+    $('html, body').animate({
+        scrollTop: $(id).offset().top - offset
+    }, 1000);
+    return false;
 }
-function rechangeItem(n) {
-    objev = document.getElementsByClassName(n)
-    Array.from(objev).forEach(function(item) {
-        item.setAttribute('fill', 'white');
-     });
-}
-// $('#mainModal').modal('show')
+$('.form-block').on('submit', function(event) {
+    event.preventDefault();
+    $.ajax({
+      url:"telegram.php",
+      type: 'POST',
+      data: $(this).serialize(),
+      success: function(data) {
+        alert('Спасибо за заявку, скоро мы вам перезвоним.');
+        // console.log(data);
+        $('.form-block')[0].reset();
+      },
+    });
+});

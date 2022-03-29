@@ -1,26 +1,43 @@
 .portfolio
+    &-container
+        margin-bottom: 10px
     &-title
         margin-bottom: 30px
     &-block
-        padding: 35px 0 120px
+        padding: 35px 0 70px
     &-item
-        margin-bottom: 30px
+        &:nth-child(2)
+            padding-bottom: 15px !important
         & img
             width: 100%
         &__sm
-            margin-top: 15px    
-    &-link
-        text-decoration: underline
-        &:hover
-            text-decoration-color: $red               
-@media (min-width: 768px)
-    .portfolio
-        &-item
-            &__sm
-                margin-top: 5px     
+            padding-top: 30px
 
-@media (min-width: 992px)
+    &-offer
+        display: flex
+        justify-content: center
+@media (max-width: 992px)
     .portfolio
         &-item
             &__sm
-                margin-top: 13px     
+                padding-top: 30px
+    .polit-kitchen
+        max-width: 420px
+@media (max-width: 786px)
+    .portfolio
+        &-title
+            margin-bottom: 25px !important
+        &-container
+            justify-content: center
+            flex-wrap: wrap-reverse !important
+        &-item
+            max-width: 450px
+            margin-bottom: 0px
+            & img
+                width: 100%
+            &:first-child
+                margin-bottom: 15px
+            &__sm
+                padding-top: 15px
+    .polit-kitchen
+        max-width: 100%

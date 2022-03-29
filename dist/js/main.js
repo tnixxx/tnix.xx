@@ -1,0 +1,1 @@
+function slowScroll(t){return $("html, body").animate({scrollTop:+$(t).offset().top},1e3),!1}$(".form-block").on("submit",function(t){t.preventDefault(),$.ajax({url:"telegram.php",type:"POST",data:$(this).serialize(),success:function(t){alert("Спасибо за заявку, скоро мы вам перезвоним."),$(".form-block")[0].reset()}})});
