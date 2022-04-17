@@ -2,17 +2,19 @@
     &-container
         position: relative
         height: 100vh
-        margin-bottom: -100px
+        margin-bottom: -120px
     &-arrow
         position: absolute
         bottom: 20%
-        right: 47%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
     &-block
         display: flex
         justify-content: center
         &-title
-            font-size: 78px
-            line-height: 78px
+            font-size: 90px
+            line-height: 90px
             font-weight: 600
             z-index: 5
             position: absolute
@@ -25,6 +27,13 @@
     position: absolute
     opacity: 0.3
     z-index: -1
+@media (max-width: 768px)
+    .hero
+        &-block
+            &-title
+                top: 15%
+                left: 20px
+                max-width: 100px
 @media (max-width: 576px)
     .hero
         &-block

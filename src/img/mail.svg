@@ -1,0 +1,6 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="svg-circle" cx="15" cy="15" r="15" fill="white"/>
+<path class="svg-email" d="M21.7626 21.6H8.235C6.99986 21.6 6 20.7038 6 19.5966V11.0034C6 9.89626 6.99986 9 8.235 9H21.7626C22.9978 9 23.9977 9.89626 23.9977 11.0034V19.5966C24.0565 20.7038 22.9978 21.6 21.7626 21.6Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+<path class="svg-email" d="M15 16L7 10" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="svg-email" d="M23 10L15 16" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>  
