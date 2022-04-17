@@ -142,3 +142,9 @@ out
 # Ignore bot token files
 *.php
 gulpfile.js
+dist/guest-page.html
+dist/index.html
+dist/politics.html
+src/guest-page.html
+src/index.html
+src/politics.html
